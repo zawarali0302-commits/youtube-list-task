@@ -7,7 +7,7 @@ interface YoutubeListComponentProps {
 const YoutubeListComponent = ({list}:YoutubeListComponentProps) => {
     return (
         <div className="flex">
-            {list.map((l) => <ListComponent items={l} /> )}
+            {list.map((l) => <li key={l.id}><ListComponent items={l} /></li> )}
         </div>
     )
 }
