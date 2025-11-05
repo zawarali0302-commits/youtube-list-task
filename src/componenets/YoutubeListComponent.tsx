@@ -6,8 +6,8 @@ interface YoutubeListComponentProps {
 }
 const YoutubeListComponent = ({list}:YoutubeListComponentProps) => {
     return (
-        <div className="flex">
-            {list.map((l) => <li key={l.id}><ListComponent items={l} /></li> )}
+        <div className="flex justify-between bg-gray-200">
+            {list.map((l) => <ul><li key={l.id}><ListComponent items={l} /></li></ul> )}
         </div>
     )
 }

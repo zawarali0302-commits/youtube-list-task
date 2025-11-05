@@ -5,7 +5,7 @@ interface ListComponentProps {
 }
 const ListComponent = ({ items }: ListComponentProps) => {
     return (
-        <div className="bg-gray-100 w-full p-4">
+        <div className="p-4">
             <h2 className="text-gray-800 font-semibold text-sm mb-3">{items.title}</h2>
             <ul className="space-y-4 text-gray-600 text-sm">
                 <li className="hover:underline cursor-pointer"><a href={items.link1}>{items.nameLink1}</a></li>
